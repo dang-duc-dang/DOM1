@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="banggia">
+    <button onclick="checkGia()">check giá</button>
+    <br>
+    <p id="result"></p>
+
+    <script>
+        function checkGia() {
+            let a = document.getElementById("banggia").value;
+
+             if(a == "ổi" , a == 'dưa hấu'){
+                result = "20000/kg"
+             }else if(a == 'táo' ,a == 'xoài'){
+                result = "30000/kg"
+             }else{
+                result = "50000/kg"
+             }
+document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>
